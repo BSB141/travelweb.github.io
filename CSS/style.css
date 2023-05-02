@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Poppins&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* #################### BASIC HTML STYLING ################## */
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+h1, h2, h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+/* ###################### CONTAINER STYLING ##################  ====> FIrst step */
+#body-head #navbar{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#navbar > div:first-child{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #fff;
+}
+#container{
+    display: flex;
+    justify-content: space-between;
+}
+#container > div{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: 0.15em;
+    margin: 1rem;
+    margin-bottom: 3.5rem;
+    color: #fff;
+}
+#container> div > a{
+    color: #fff;
+}
+#container div:hover{
+    border-bottom: 1px solid #fff;
+}
+#navbar > div{
+    padding-top: 1.5rem;
+}
+
+/* #################### HEADER STYLING ################## */
+#body-head{
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(../img/header-image.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#container3{
+    display: grid;
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#container3 >h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+#container3 >p{
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+#container3 >p+p a{ 
+    background-color: #fff;
+    color: #e63946;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+}
+#container3 a:hover{
+    background-color: #fcf3f2;
+}
+
+/* ##################### SHOWCASE STYLING #################### */
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+#showcase{
+    background-color: #ddd;
+    padding: 10rem 0;
+}
+.row{
+    height: 350px;
+    background-color: #fff;
+}
+.row1{
+    margin-bottom: 10rem;
+}
+.row1 .img-box, .row2 .text-box{
+    float: left;
+    width: 50%;
+}
+.row2 .img-box, .row1 .text-box{
+    float: right;
+    width: 50%;
+}
+.row .img-box{
+    height: 100%;
+}
+.row .text-box{
+    padding: 3rem;
+}
+.row .img-box img{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.row h1{
+    color: #333;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+.row p{
+    color: #555;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.row a{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+    background-color: #fff;
+    border-radius: 1.5em;
+    color: #e63946;
+    border: 2px solid #e63946;
+}
+.row{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+#showcase a:hover{
+    background-color: #fcf3f2;
+}
+
+
+
+/* ######################## FEATURE SECTION STYLING ################### */
+
+#feature-section{
+    max-width: 1200px;
+    width: 90%;
+    margin: 10rem auto;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#feature-section > div{
+    text-align: center;
+}
+.box1{
+    background-color: #263238;
+    color: #fff;
+}
+#feature-section div:nth-child(2){
+    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    color: #fff;
+}
+#feature-section > div h2{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+#feature-section > div p{
+    padding: 1rem;
+}
+.font1, .font2{
+    margin-top: 1rem;
+}
+.font1{
+    color: #e63946;
+}
+
+/* ###################### FOOTER STYLING ######################### */
+#footer > div{
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+}
+
+#footer{
+    background-color: #263238;
+    color: #fff;
+    text-align: center;
+}
+.paragraph{
+    padding-bottom: 2rem;
+}
+#footer > div a i{
+    color: #fff;
+}
+/* ####################### ABOUT PAGE STYLING ######################## */
+#head-body #navbar{
+    background-color: #263238;
+}
+
+#navbar-box{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#navbar-box > div{
+    padding-top: 1.5rem;
+}
+#about-section{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    margin-top: 6rem;
+    background-color: #fff;
+}
+#about-section > h2::after{
+    content: "";
+    display: block;
+    border: 3px solid #e63946;
+}
+
+/* ####################### ABOUT CONTENT STYLING ####################### */
+#about-section h2{
+    font-size: 2.2rem;
+}
+#about-section > ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 10x);
+}
+#about-section > ul{
+    text-align: center;
+}
+#about-section > ul >li::before{
+    content: "\2713";
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+#about-section > #boxes{
+    margin-top: 2rem;
+}
+#boxes{
+    display: flex;
+    justify-content: space-around;
+}
+#boxes > div{
+    text-align: center;
+}
+#boxes > div >h2{
+    font-size: 2.2rem;
+    color: #e63946;
+    font-weight: 700;
+}
+#boxes h2+p{
+    font-weight: bold;
+    color: #555;
+}
+#about-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+#about-box > div:last-child{
+    border: 4px solid #fff;
+    padding: 1rem 5em;
+    margin-right: .5rem;
+    font-size: 2rem;
+}
+#about-box > div a{
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+#about-box{
+    padding: 1rem;
+}
+#about-box > div:first-child{
+    padding: 1.2rem 2rem 2.2rem .5rem;
+    font-weight: bold;
+}
+/* ###################### ADDRESS STYLING ################### */
+#contact-section{
+    max-width: 1200px;
+    width: 90%;
+    margin: 8rem auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f7f7f7;
+}
+
+#contact-section #address{
+    width: 48%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#contact-section #contact{
+    width: 48%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#address > div:nth-child(2) img{
+    width: 90%;
+    height: 320px;
+    padding: 1.5rem .5rem 0 0 ;
+}
+#address{
+    padding: 1rem;
+    background-color: #fff;
+}
+.icons{
+    color: #e63946;
+}
+#address > div > div{
+    display: flex;
+    margin-top: 1rem;
+}
+#address > div > div h2{
+    text-transform: uppercase;
+    margin-left: 1.5rem;
+    font-size: 2.2rem;
+}
+#address > div > div + p{
+    margin-bottom: 1.5rem;
+}
+
+/* ###################### CONTACT BOX STYLING #################### */
+#contact{
+    padding: 1rem;
+    background-color: #fff;
+}
+#contact > h2::after{
+    content: "";
+    display: block;
+    border: 3px solid #ee4758;
+}
+#contact > h2{
+    font-size: 2.2rem;
+}
+#contact > p{
+    color: #555;
+}
+input[type = "text"]{
+    width: 100%;
+}
+form label::after{
+    content: "*";
+    color: #e63946;
+}
+textarea{
+    width: 100%;
+    height: 250px;
+}
+input[type = "submit"]{
+    text-transform: uppercase;
+    display: block;
+    margin: auto;
+    background-color: #e63946;
+    color: #fff;
+    padding: .5rem 2rem;
+    border: 2px solid #e63946;
+    margin-top: 2rem;
+    cursor: pointer;
+    outline: none;
+}
+label{
+    font-size: 1.2rem;
+}
+/* ###################### THANK YOU STYLING #################### */
+#thanku{
+    width: 60%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#thanku > div:first-child{
+    color: #e63946;
+    margin: 10% auto;
+}
+#thanku > div:last-child{
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+/* ########################### MEDIA QUERIES ####################### */
+
+@media all and (max-width: 500px){
+    html{
+        font-size: 50%;
+    }
+    #body-head #navbar{
+        display: block;
+        text-align: center;
+    }
+    #container{
+        width: 60%;
+        margin: auto;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .img-box img{
+        display: block;
+    }
+    .row .img-box,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    #feature-section{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        box-shadow: none;
+    }
+    #feature-section > div:nth-child(1),
+    #feature-section > div:nth-child(2){
+        margin-bottom: 7rem;
+    }
+    #feature-section .box1{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    #about-box{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #about-section > h2::after{
+        content: "";
+        display: block;
+        border: 2px solid #e63946;
+    }
+    #contact-section{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #contact-section #contact,
+    #contact-section #address{
+        width: 100%;
+        height: auto;
+    }
+    #contact > h2::after{
+        content: "";
+        display: block;
+        border: 2px solid #ee4758;
+    }
+}
+
+
+
+@media all and (min-width: 501px) and (max-width: 768px){
+    html{
+        font-size: 50%;
+    }
+    #body-head #navbar{
+        display: block;
+        text-align: center;
+    }
+    #container{
+        width: 60%;
+        margin: auto;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .img-box img{
+        display: block;
+    }
+    .row .img-box,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    #feature-section{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        box-shadow: none;
+    }
+    #feature-section > div:nth-child(1),
+    #feature-section > div:nth-child(2){
+        margin-bottom: 7rem;
+    }
+    #feature-section .box1{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    #about-box{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #about-section > h2::after{
+        content: "";
+        display: block;
+        border: 2px solid #e63946;
+    }
+    .anchor{
+        text-align: center;
+    }
+
+    #contact-section{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #contact-section #contact,
+    #contact-section #address{
+        width: 100%;
+        height: auto;
+    }
+    #contact > h2::after{
+        content: "";
+        display: block;
+        border: 2px solid #ee4758;
+    }
+}
+
+
+
+@media all and (min-width: 769px) and (max-width: 1200px){
+    html{
+        font-size: 50%;
+    }
+    .row .text-box{
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+} 
